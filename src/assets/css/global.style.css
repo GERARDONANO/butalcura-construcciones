@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+
+
+* {
+    /* font-family: Montserrat; */
+    font-family:'Roboto Slab', serif;
+    
+}
+
+
+:root {
+    --butalcura-main-color: #290661;
+    --butalcura-main-color-light: #966ED8; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* navbar custom */
+
+#contact_nav_btn {
+    padding: 10px 25px 10px 25px;
+    background-color: var(--butalcura-main-color);
+    border-color: var(--butalcura-main-color);
+    color: #fff;
+    border: 1px;
+    border-radius: 40px 40px 40px 40px;
+    border-style: solid;
+
+}
+
+#contact_nav_btn:hover {
+    background-color: var(--butalcura-main-color-light);
+    border-color: var(--butalcura-main-color-light);
+    font-weight: bold;
+}
+
+#contact_nav_btn:focus {
+
+    -webkit-box-shadow: 4px 5px 29px 4px #290661; 
+    box-shadow: 4px 5px 29px 4px #290661;
+
+    /* box-shadow: 4px 5px 29px 15px #290661; */
+    /* box-shadow: 4px 5px 33px 26px #290661; */
+}
+
+
+#contact_nav_li{
+    padding: 0px 0px 0px 20px;
+}
+
+
+.navbar, .navbar-expand {
+    padding: 20px;
+}
+
+
+
