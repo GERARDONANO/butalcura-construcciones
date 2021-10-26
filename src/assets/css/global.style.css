@@ -43,20 +43,33 @@ html {
 
     -webkit-box-shadow: 4px 5px 29px 4px #290661; 
     box-shadow: 4px 5px 29px 4px #290661;
-
-    /* box-shadow: 4px 5px 29px 15px #290661; */
-    /* box-shadow: 4px 5px 33px 26px #290661; */
 }
 
-
-#contact_nav_li{
-    padding: 0px 0px 0px 20px;
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active {
+    color: var(--butalcura-main-color);
+    font-weight: bold;
 }
 
 
 .navbar, .navbar-expand {
     padding: 20px;
 }
+
+
+/* footer custom */
+
+footer {
+    /* background-color: var(--butalcura-main-color); */
+    background-color: #212529
+}
+
+
+
+footer #text_credits_footer {
+    font-size: 13px !important;
+
+}
+
 
 
 

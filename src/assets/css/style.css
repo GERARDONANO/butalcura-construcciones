@@ -9,13 +9,13 @@
 
 #divCarousel1 {
 
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)),  url('../img/example2.JPG');
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)),  url('../img/optimized/example2.JPG');
     /* background: url('../img/example2.JPG');     */
 
 }
 
 #divCarousel2 {
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)),  url('../img/example1.JPG');
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)),  url('../img/optimized/example1.JPG');
     /* background: url('../img/torrente.jpg'); */
 }
 
@@ -23,7 +23,7 @@
 #contact_section {
     /* height: 300px; */
     height: auto;
-    background-image: url('../img/example2.JPG');
+    background-image: url('../img/optimized/example2.JPG');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -74,8 +74,10 @@
 
 
 .img-fluid {
+    height: 400px;
     max-width: 100%;
-    max-height: 400px;
+    /* max-width: 100%; */
+    /* max-height: 400px; */
 }
 
 

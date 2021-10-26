@@ -19,13 +19,12 @@
   <meta property="og:url" content="https://www.midominio.cl/">
   <link rel="canonical" href="https://www.midominio.cl">
 
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-  <!-- Bootstrap 5 css -->
+  <!-- Bootstrap 5 customed css -->
   <link rel="stylesheet" href="./src/assets/css/bootstrap.css">
   <!-- own styles -->
   <link rel="stylesheet" href="./src/assets/css/style.css">
   <!-- AOS animations -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./src/assets/css/aos.css">
   <!-- font Awesome min -->
   <link rel="stylesheet" type="text/css" href="./src/assets/css/all.min.css">
   <title>Construccion de Obras Menores y Remodelaciones en Osorno, Chile</title>
@@ -36,26 +35,34 @@
 
 
 
+<header>
+
    <nav id="navbar" class="navbar navbar-expand-md sticky-top navbar-light bg-light mb-auto fs-5" aria-label="Fourth navbar example">
      <div class="container-fluid mx-md-3 mx-lg-6">
-       <a class="navbar-brand ms-5" href="#">Butalcura</a>
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
-         aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+       <!-- <a class="navbar-brand ms-5" href="#"> -->
+        
+        <a class="navbar-brand" href="#">
+          <img src="./src/assets/icon/butalcura_nav.png" alt="butalcura construcciones logo"  class="d-inline-block align-text-top">
+        </a>
+        
+       <!-- </a> -->
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_main"
+         aria-controls="navbar_main" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
        </button>
   
-       <div class="collapse navbar-collapse me-5 text-center" id="navbarsExample04">
+       <div class="collapse navbar-collapse me-5 text-center" id="navbar_main">
          <ul class=" navbar-nav ms-auto mb-1 align-items-center ">
            <li class=" nav-item custom">
              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
            </li>
            <li class="nav-item custom">
-             <a class="nav-link" aria-current="page" href="#about_us">Nosotros</a>
+             <a class="nav-link" href="#about_us">Nosotros</a>
            </li>
            <li class="nav-item custom">
-             <a class="nav-link" href="#">Proyectos</a>
+             <a class="nav-link" href="./src/pages/proyectos.html">Proyectos</a>
            </li>
-           <li class="nav-item contact" id="contact_nav_li">
+           <li class="nav-item px-4" >
              <a href="./src/pages/contacto.html" id="contact_nav_btn" class="btn btn-primary nav-link" role="button" >Contacto</a>
            </li>
          </ul>
@@ -65,16 +72,16 @@
      </div>
    </nav>
 
+</header>
 
 
 
-
-
+<main>
 
   <!-- animacion para section  data-aos="zoom-in" data-aos-duration="3000" -->
   <section id="cover_page" class="pb-3 pb-sm-5" >
 
-    <div id="carousel" class="carousel slide mb-0" data-bs-ride="carousel" data-bs-interval=4500>
+    <div id="carousel" class="carousel slide mb-0" data-bs-ride="carousel" data-bs-interval=6000 data-bs-pause=false>
 
       <div class="carousel-inner">
 
@@ -104,7 +111,6 @@
   </section>
 
 
-  <main>
 
 
     <!-- BUTALCURA comprometidos con tus sueños -->
@@ -243,12 +249,7 @@
               </div>
             </div>
             <div class="col"></div>
-
-
-
           </div>
-
-
         </div>
 
 
@@ -272,7 +273,7 @@
           </div>
 
           <div class="col col-sm-12 col-md-6 text-center py-3">
-            <img src="./src/assets/img/example1.JPG" class="img-fluid" alt="imagen aqui">
+            <img src="./src/assets/img/optimized/example1.JPG" loading="lazy" class="img-fluid" alt="imagen aqui">
           </div>
 
         </div>
@@ -280,7 +281,7 @@
 
         <div class="row my-4">
           <div class="col col-sm-12 col-md-6 text-center py-3 order-last order-sm-1">
-            <img src="./src/assets/img/example2.JPG" class="img-fluid" alt="imagen aqui">
+            <img src="./src/assets/img/optimized/example2.JPG" loading="lazy" class="img-fluid" alt="imagen aqui">
           </div>
 
           <div class="col col-12 col-md-6 align-self-center order-first order-sm-2" data-aos="fade-up" data-aos-delay="50"
@@ -336,32 +337,38 @@
 
 
 
-  <footer class="container-fluid text-center py-5 mt-5 shadow-none  bg-light rounded">
-    <div class="row">
+  <footer class="container-fluid text-center pt-5 pb-1 mt-5 ">
+    <div class="row justify-content-center">
 
-      <div class="col">
-        <p>LOGO AQUI</p>
+      <div class="col align-self-center">
+        <p class="text-white">LOGO AQUI</p>
       </div>
 
-      <div class="col">
-
-      </div>
 
       <div class="col">
+        <div class="text-white fw-bold user-select-none text-center">
+          <p>Navegación</p>
+        </div>
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link custom active" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about_us">Nosotros</a>
+            <a class="nav-link custom" href="#about_us">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./src/pages/contacto.html">Contacto</a>
+            <a class="nav-link custom" href="./src/pages/proyectos.html">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom" href="./src/pages/contacto.html">Contacto</a>
           </li>
         </ul>
       </div>
 
       <div class="col">
+        <div class="text-white fw-bold user-select-none text-center">
+          <p>Síguenos</p>
+        </div>
         <ul class="nav flex-column">
 
           <li class="nav-item m-1">
@@ -380,8 +387,11 @@
           </li>
 
       </div>
-      <div class="col">
 
+    </div>
+    <div class="row pt-3">
+      <div class="col col-12">
+        <h4 id="text_credits_footer" class="text-white user-select-none"> &copy; Butalcura <span id="footer_year"></span> | Powered by NanoDeveloper</h4>
       </div>
     </div>
   </footer>
@@ -403,22 +413,15 @@
 
 
 
-
-  <!-- aos animation -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+ <!-- aos animation -->
+ <script src="./src/js/aos.js"></script>
   <!-- bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
     <!-- own -->
-  <script src="./src/js/index.js"></script>
-  <!-- <script src="./src/js/navbar.js"></script> -->
+  <script src="./src/js/main.js"></script>
+
 
 </body>
 
