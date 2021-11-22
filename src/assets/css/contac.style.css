@@ -3,6 +3,12 @@
 @import url('./global.style.css');
 
 
+form  input {
+    padding: 6px 16px 6px 16px !important;  
+}
+
+
+
 #contact_section {
     height: 300px;
     background-image: url('../img/optimized/example2.JPG');
@@ -47,12 +53,21 @@
 #main_content {
 
     background: rgb(255,255,255);
-    /* background: linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(150,110,216,1) 50%, rgba(255,255,255,1) 100%); */
     background: linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(14,6,97,100) 50%, rgba(255,255,255,1) 100%);
 
     background-size: 200%;
     animation: fondo-anim .10 infinite alternate;
 
+}
+
+
+
+.invalid_feedback_custom {
+    font-weight: bold;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+    color: #dc3545;
 }
 
 

@@ -7,23 +7,19 @@
     background-attachment: fixed;
 }
 
-#divCarousel1 {
-
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)),  url('../img/optimized/example2.JPG');
-    /* background: url('../img/example2.JPG');     */
-
+#divCarousel1 { 
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)),  url('../img/optimized/example2_nueva.JPG');
 }
 
 #divCarousel2 {
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)),  url('../img/optimized/example1.JPG');
-    /* background: url('../img/torrente.jpg'); */
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)),  url('../img/optimized/example1_nueva.jpg');
 }
 
 
 #contact_section {
-    /* height: 300px; */
+    height: 300px;
     height: auto;
-    background-image: url('../img/optimized/example2.JPG');
+    background-image: url('../img/optimized/example2_nueva.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -46,21 +42,6 @@
     font-size: 22px;
 }
 
- .service_content_inside {
-    height: 100%;
-}
-
-
-.service_content_img {
-    /* background: url('../img/example1.JPG');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    background: rgb(41,6,97);
-    background: radial-gradient(circle, rgba(41,6,97,1) 7%, rgba(255,255,255,0.9923319669664741) 100%);  
-    height: 250px;
-}
-
 
 .parrafo, .parrafo span {
     font-family: Arial, Helvetica, Lucida, sans-serif;;
@@ -72,19 +53,71 @@
 }
 
 
-
-.img-fluid {
-    height: 400px;
-    max-width: 100%;
-    /* max-width: 100%; */
-    /* max-height: 400px; */
+.inner_img_vision_mision > img {
+    height: 100%;
 }
 
+.service_content_img {
+    /* background: url('../img/example1.JPG');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background: rgb(41,6,97);
+    background: radial-gradient(circle, rgba(41,6,97,1) 7%, rgba(255,255,255,0.9923319669664741) 100%);  
+    height: 100%;
+}
 
+.service_content {
+    height: 150px;
+    width: auto;
+}
 
+.service_content_inside {
+    height: 100%;
+} 
 
 
 /* ------------------------------------------------------------------------------------------------ */
+
+@media ( max-width: 500px ) {
+    
+    .carousel-inner , .carousel-item {
+        height: 300px;
+    }
+
+    #divCarousel1 {
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)),  url('../img/optimized/example2_new.jpg');    
+    }
+
+
+    #divCarousel2 {
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)),  url('../img/optimized/example1_new.JPG');
+    }
+
+    .inner_img_vision_mision {
+        height: 250px;
+    }
+
+    .inner_img_vision_mision > img {
+        height: 100%;
+    }
+
+    .service_content {
+        height: 100px;
+        width: auto;
+    }
+
+
+}
+
+
+@media ( min-width: 501px ) {
+
+    .inner_img_vision_mision {
+        height: 300px;
+    }
+}
+
 
 
 

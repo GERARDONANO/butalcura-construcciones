@@ -70,6 +70,42 @@ footer #text_credits_footer {
 
 }
 
+footer .nav-item > .nav-link.custom.active {
+    font-weight: bold;
+    color: #fff;
+}
+
+footer .nav-item > .nav-link.custom {
+    color: var(--butalcura-main-color-light);
+}
+
+
+/* section background image */
+@media ( max-width: 500px ) {
+
+    .background_section_small {
+        height: 200px !important;
+    }
+
+}
+
+
+
+
+
+/* footer */
+
+@media ( max-width: 576px ) {
+    footer #butalcura_logo_footer {
+        height: 120px;
+    }
+}
+
+@media ( min-width: 577px ) {
+    footer #butalcura_logo_footer {
+        height: 150px;
+    }
+}
 
 
 
